@@ -9,12 +9,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите номер N:");
         int number = scanner.nextInt();
-        int[] fibonacciNumbers = new int[number + 1];
-        fibonacciNumbers[0] = 1;
-        fibonacciNumbers[1] = 1;
-        for (int i = 2; i < fibonacciNumbers.length; i++) {
-            fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
+        int n1 = 0;
+        int n2 = 1;
+            for (int i = 2; i <= number; ++i) {
+                int n3 = n1 + n2;
+                n1 = n2;
+                n2 = n3;
+            }
+        System.out.print(n1);
         }
-        System.out.println(fibonacciNumbers[number] + " - искомое число");
+
     }
-}
