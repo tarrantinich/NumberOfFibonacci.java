@@ -13,7 +13,7 @@ public class Main {
         int n2 = 1;
             for (int i = 2; i <= number; ++i) {
                 n2 = n2 + n1;
-                n1 = n2;
+                n1 = n2 - n1;
             }
         System.out.print(n1 + " - искомое число");
         }
