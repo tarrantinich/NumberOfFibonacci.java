@@ -16,7 +16,7 @@ public class Main {
                 n1 = n2;
                 n2 = n3;
             }
-        System.out.print(n1);
+        System.out.print(n1 + " - искомое число");
         }
 
     }
